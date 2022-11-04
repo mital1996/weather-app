@@ -11,7 +11,8 @@ const forecast = (latitude , longitude , callback) => {
         } else {
             callback(undefined, response.body.current.weather_descriptions[0] + ' It is currently ' 
             + response.body.current.temperature +
-             ' degress out. It is feel like  ' +  response.body.current.feelslike + ' degress out.')
+             ' degress out. It is feel like  ' +  response.body.current.feelslike + ' degress out.'+
+             'if the humidity like'+response.body.current.humidity+'% period.')
             }
     })
 }
